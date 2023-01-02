@@ -6,4 +6,4 @@ command = "yarn run build; zola build"
 ZOLA_VERSION = "0.16.1"
 
 [context.deploy-preview]
-command = "zola build --base-url $DEPLOY_PRIME_URL"
+command = "yarn run build; zola build --base-url $DEPLOY_PRIME_URL"
