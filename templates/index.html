@@ -3,15 +3,6 @@
 {% block content %}
 
 <div class="flex h-screen flex-col">
-    <div class="flex flex-row-reverse my-1.5">
-        {% for section in section.subsections %}
-        {% set sub = get_section(path=section) %}
-        <a href="{{sub.permalink | safe }}">
-            <p class="rotate-90">{{sub.title}}</p>
-        </a>
-        {% endfor %}
-    </div>
-
     <div class="m-auto">
         <h1 class="text-8xl font-bold text-left">Undecided.</h1>
         <div class="flex flex-row gap-2">
